@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    width: 100%;
+    font-family: sans-serif;
+    color: white;
+    background-color: rgb(9, 76, 255);
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+form{
+    font-family: sans-serif;
+    color: white;
+    width: 100%;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(9, 76, 128);
+    padding: 5px 0;
+    border-radius: 0 0 5px 5px;
+}
+form.active{
+    display: flex;
+}
+form input{
+    border: none;
+    outline: none;
+    height: 50px;
+    margin: 20px 0;
+    padding: 0 10px;
+    font-size: 1.3rem;
+    border-radius: 5px;
+}
+input[type = "submit"]{
+    color: white;
+    background-color: rgb(9, 76, 255);
+    cursor: pointer;
+}
+
+@media screen and (max-width : 900px) {
+    main{
+        width: 50%;
+    }
+    h1{
+        font-size: 1.5rem;
+    
+    }
+    form{
+    flex-direction: column;        
+    padding: 0;
+    }
+    form input{
+        width: 90%;
+        margin: 10px 0;
+    }
+
+}
+@media screen and (max-width : 700px) {
+    main{
+        width: 75%;
+    }
+    h1{
+        font-size: 1.5rem;
+    
+    }
+    form{
+    flex-direction: column;        
+    padding: 0;
+    }
+    form input{
+        width: 90%;
+        margin: 10px 0;
+    }
+
+}
+@media screen and (max-width : 500px) {
+    main{
+        width: 90%;
+    }
+    h1{
+        font-size: 1.5rem;
+    
+    }
+    form{
+    flex-direction: column;        
+    padding: 0;
+    }
+    form input{
+        width: 90%;
+        margin: 10px 0;
+    }
+
+}

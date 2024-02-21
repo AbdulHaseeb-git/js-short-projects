@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #44d1ee;
+    position: relative;
+}
+::selection{
+    color: white;
+    background-color: #48dbfb;
+}
+.viewOption{
+    background-color: white;
+    color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.viewOption.active{
+    display: block;
+}
+.box{
+    width: 350px;
+    height: 400px;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;   
+    box-shadow: 5px 5px 30px rgba(128,128,128,0.8),
+                inset 0 0 20px rgba(128, 128, 128, 0.8);
+    transition: height 0.5s ease-in-out;
+}
+.box.passive{
+    height: 0;
+}
+.cross{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-color: #48dbfb;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 0 0 0 60px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.content{
+    position: relative;
+    top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+}
+.fa-envelope{
+    background-color: #48dbfb;
+    color: white;
+    font-size: 4rem;
+    padding: 20px;
+    border-radius: 50%;
+}
+h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+    text-align: left;
+    margin: 10px 0;
+}
+p{
+    text-align: justify;
+    color: rgb(155, 152, 152);
+    font-family: sans-serif;
+}
+.emailField{
+    width: 100%;
+    height: 100px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.emailField .fa-envelope{
+    font-size: 1.5rem;
+    border-radius: 0;
+    width: 15%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    padding: 0;
+    cursor: pointer;
+    }
+input{
+    width: 85%;
+    height: 40px;
+    border-color:#48dbfb;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding-left: 5px;
+}
+input:hover{
+    box-shadow: 0px 0px 10px #44d1ee;
+}
+.subscribe{
+ width: 100%;
+ height: 60px;
+ font-size: 1.3rem;
+ font-family: Arial, Helvetica, sans-serif;
+ color: white;
+ background-color: #44d1ee;
+ border-radius: 5px;
+ border: none;
+ cursor: pointer;
+ transition: font-size 0.5s;
+}
+.subscribe:hover{
+    background-color: #48dbfb;
+    font-size: 1.2rem;
+}

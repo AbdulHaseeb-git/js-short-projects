@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.clickMe{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(64, 64, 140);
+    color: white;
+    font-size: 2rem;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    display: block;
+    cursor: pointer;
+}
+.clickMe.active{
+    display: none;
+}
+.box{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding: 20px 10px;
+    box-shadow: 0 0 20px rgb(64, 64, 140),
+                0 0 20px rgb(64, 64, 140);
+    border-radius: 10px;
+}
+.box.active{
+    display: flex;
+}
+.fa-exclamation{
+    border: 5px solid rgb(132, 132, 4);
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    font-size: 4rem;
+    color: rgb(132, 132, 4);
+    text-align: center;
+}
+h2{
+    padding-bottom: 20px;
+}
+p{
+    color: rgba(16, 228, 16, 0.926);
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+.popupButtons{
+    width: 100%;
+    padding: 0 10px;
+}
+.popupButtons button{
+    width: 100px;
+    height: 40px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+.popupButtons button:first-child{
+    background-color: rgba(16, 228, 16, 0.926);
+}
+.popupButtons button:last-child{
+    background-color: red;
+}

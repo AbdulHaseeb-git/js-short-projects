@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body{
+    background-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.changeColor{
+    background-color: black;
+    color: white;
+}
+header{
+    border-bottom: 3px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.dark{
+    background-color: rgb(80, 71, 71);
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rounded{
+    margin-right: 10px;
+    background-color: white;
+    height: 24px;
+    width: 48px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+#btn{
+    width: 22px;
+    height: 22px;
+    background-color: grey;
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    border-radius: 50%;    
+    cursor: pointer;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+.start{
+    left: 0%;
+}
+label{
+    cursor: pointer;
+    color: white;
+}
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+h2{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+main{
+    padding: 10px 20px;
+
+}
+main p{
+    text-align: justify;
+}

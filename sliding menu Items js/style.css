@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: sans-serif;
+    background-color: #0d3737;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    position: fixed;
+    top: 15%;
+    left: 47%;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.header.full{
+    width: 400px;
+    left: 40%;
+}
+.header button{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    transform: rotate(0);
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+}
+.header button.animate{
+    transform: rotate(135deg);
+}
+.menuList{
+    margin-top: 20px;
+    width: 400px;
+    height: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    overflow: hidden;
+    position: fixed;
+    top: 25%;
+    left: 40%;
+    transition: height 0.5s ease-in-out;
+}
+.menuList.active{
+    height: 350px;
+}
+.menuList li{
+    list-style-type: none;
+    padding: 10px 0;
+    background-color: black;
+    border-bottom: 2px solid rgba(138, 138, 138, 0.2);
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+}
+.menuList li:first-child{
+    border-radius: 10px 10px 0px 0px;
+}
+.menuList li:hover{
+    box-shadow: inset 0 0 5px #33ffff,
+                inset 0 0 10px #66ffff;
+    color: #33ffff;
+}
